@@ -1,3 +1,8 @@
+maxlength = 20;
 function truncate(str, maxlength) {
-  // ваш код...
+  if (str.length > maxlength) {
+    return str.slice(0, maxlength-1) + '\u2026';
+  }
+  return str;
 }
+document.write(truncate('Вот, что мне хотелось бы сказать на эту тему:', maxlength));
