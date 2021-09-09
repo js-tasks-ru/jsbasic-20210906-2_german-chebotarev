@@ -5,4 +5,3 @@ function truncate(str, maxlength) {
   }
   return str;
 }
-document.write(truncate('Вот, что мне хотелось бы сказать на эту тему:', maxlength));
