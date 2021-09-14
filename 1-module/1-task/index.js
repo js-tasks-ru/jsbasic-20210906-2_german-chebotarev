@@ -1,16 +1,9 @@
 function factorial(n) {
-  if (n == 0 || n == 1) {
-    return 1;
-  }
-  let result = n;
+  if (n === 0 || n === 1)
+  {return 1;}
 
-  do {
-    result = result * (n - 1);
-    n = n - 1;
+  for (let i = n - 1; i >= 1; i--) {
+    n *= i;
   }
-
-  while (n > 1);
-  return result;
+  return n;
 }
-
-console.log(factorial(5));
